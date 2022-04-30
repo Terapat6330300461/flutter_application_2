@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'Person.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,7 +10,7 @@ class MyApp extends StatelessWidget {
 
   // This widget is the root of your application.
   @override
-  Widget build(BuildContext context) {
+  /* Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
@@ -26,6 +27,20 @@ class MyApp extends StatelessWidget {
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
+  } */
+  Widget build(BuildContext context) {
+    return MaterialApp(
+        title: "My first flutter app",
+        home: Scaffold(
+            appBar: AppBar(title: const Text("my first flutter app")),
+            body: Person(
+                firstName: "Prayuth",
+                lastName: "ChanOcha",
+                email: "prayut@lnwza.com"),
+            floatingActionButton: FloatingActionButton(
+              child: const Icon(Icons.thumb_up),
+              onPressed: () => {},
+            )));
   }
 }
 
