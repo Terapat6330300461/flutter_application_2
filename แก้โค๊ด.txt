@@ -1,0 +1,92 @@
+แก้ขึ้นบรรทัดใหม่
+sol. 1
+<td colspan="12" rowspan="8" class="white_border_left white_border_right" style="vertical-align: middle !important">@Html.Raw(Model.important_note_text.Replace(Environment.NewLine, "<br>"))</td>
+sol. 2
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    .newline {
+        white-space: pre-line; /* เพื่อให้ CSS รับรู้และแสดงบรรทัดใหม่ */
+    }
+</style>
+<title>แสดงผลข้อความที่มีการเคาะบรรทัดใหม่</title>
+</head>
+<body>
+
+<!-- ตัวอย่างข้อความที่มีการเคาะบรรทัดใหม่ -->
+<div class="newline">
+    example text
+    test 321
+    anz terapat malaob
+</div>
+
+</body>
+</html>
+
+
+เพิ่มช่องล่าง
+       <tr>
+           <td colspan="40"></td>
+       </tr>
+
+       <tr>
+           <td colspan="19" class="text-center white_border_left white_border_right" style="background-color:#c39797"><B>OPERATION PROCESS</B></td>
+           <td></td>
+           <td colspan="12" class="text-center white_border_left white_border_right" style="background-color:#c39797"><B>IMPORTANT NOTE TEXT</B></td>
+           <td colspan="8" class="text-center white_border_left white_border_right" style="background-color:#c39797"><B>IMPORTANT NOTE PICTURE</B></td>
+       </tr>
+       <tr>
+           <td colspan="19"  class="text-center white_border_left white_border_right" style="vertical-align: middle !important;background-color:#e8e8e8;">
+
+
+                   <img src="https://png.pngtree.com/background/20230610/original/pngtree-4-kittens-on-black-background-picture-image_3107568.jpg" style="max-width: 500px; max-height: 200px; " />
+
+               
+           </td>
+           <td></td>
+
+
+           <td colspan="12"  class="white_border_left white_border_right" style="white-space: pre-line;">example text
+               test 321
+               anz terapat malaob
+           </td>
+
+
+           <td colspan="8"  class="text-center white_border_left white_border_right" style="vertical-align: middle !important;background-color:#e8e8e8;">
+
+               <img src="https://pbs.twimg.com/media/Da9KW70V4AA3v47.jpg" style="width: 200px;" />
+               
+           </td>
+       </tr>
+
+       <tr>
+           <td colspan="3" style="text-align:center; height:26px; vertical-align: middle !important">8</td>
+           <td colspan="5" style="text-align:center; vertical-align: middle !important">4/2/20</td>
+           <td colspan="20" style="text-align:center; white-space: pre-line; vertical-align: middle !important">example text
+               test 321
+               anz terapat malaob
+           </td>
+           <td colspan="4" style="text-align:center; vertical-align: middle !important">Wande Jr.</td>
+           <td colspan="4" style="text-align:center; vertical-align: middle !important">Deede Za.</td>
+           <td colspan="4" style="text-align:center; vertical-align: middle !important">Wonyong L.</td>
+       </tr>
+       <tr>
+           <td colspan="3" style="text-align:center; height:26px;"><strong>Revision</strong></td>
+           <td colspan="5" style="text-align:center;"><strong>Issue date</strong></td>
+           <td colspan="20" style="text-align:center;"><strong>Content</strong></td>
+           <td colspan="4" style="text-align:center;"><strong>Issue</strong></td>
+           <td colspan="4" style="text-align:center;"><strong>Check</strong></td>
+           <td colspan="4" style="text-align:center;"><strong>Approve</strong></td>
+       </tr>
+       <tr>
+           <td colspan="40">&nbsp;&nbsp;&nbsp;<small>ViewBag.FormatDoc.Doc_no</small></td>
+       </tr>
+
+
+
+
+
+
